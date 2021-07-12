@@ -1,0 +1,323 @@
+
+h4, h5, h6,
+h1, h2, h3 {margin-top: 0;}
+ul, ol {margin: 0;}
+p {margin: 0;}
+html,body{
+	font-family: 'PT Sans', sans-serif;
+	background:#fff;
+}
+
+/*--- About Starts Here -----*/
+.about{
+	background:#f7f7f3;
+	padding:2em 0;
+}
+.about h4{
+	font-size:1.8em;
+	font-weight: 700;
+	text-align:center;
+	margin-bottom:1em;
+}
+.about p{
+	width:80%;
+	margin:0 auto;
+	font-size:18px;
+	line-height:1.8em;
+	font-weight:400;
+	margin-bottom:1em;
+}
+h3.top-title{
+	font-size:2.5em;
+	color:#000;
+	font-weight:800;
+	text-transform:uppercase;
+	text-align:center;
+	margin:1em 0 0.3em 0;
+}
+.about-row{
+	background:#eaeaea;
+	margin:2em 0;
+	border-radius:8px;
+	-webkit-border-radius:8px;
+	-o-border-radius:8px;
+	-ms-border-radius:8px;
+	-moz-border-radius:8px;
+}
+.about-row-column{
+	text-align: left;
+	padding: 0;
+}
+.oldstyle{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-transform: uppercase;
+	font-size: xx-small;
+	margin-bottom: -2em;
+}
+.oldstyle1{
+	font-family: 'Courier New', Courier, monospace;
+	text-transform: capitalize;
+	font-size: xx-small;
+	font-weight: 500;
+}
+.about-row-column img{
+	width:80%;
+	height: 26em;
+	padding-bottom:.6em;
+	margin-top: 1em;
+}
+.about-column{
+	padding:1em 2em;
+	text-align:left;
+	height: 22em;
+	margin-bottom: 2em;
+	
+}
+.about-column h3{
+	font-size:2em;
+	font-weight:600;
+	text-align:left;
+	font-size:2.0em;
+	color:#000;
+	text-transform:uppercase;
+	
+}
+.about-column h4{
+	text-align:left;
+	font-size:1.5em;
+	font-weight:400;
+}
+.about-column p{
+	text-align:left;
+	width:90%;
+	font-size:1.2em;
+	line-height:1.5em;
+	color:#000;
+	margin:0 0 1em 0;
+}
+/*---- Progress Bar ---*/
+#progressbar {
+    width: 40%;
+    height: 17px;
+    background-color: #fff;
+    padding: 0px;
+    margin: -.6em 0;
+    clear: both;
+	text-align: left;
+}
+#progress {
+    background: #77b4be; /*-- Color of the bar --*/
+    height: 17px;
+    width: 0%;
+    max-width: 100%;
+    float: left;
+    -webkit-animation: progress 2s 1 forwards;
+    -moz-animation: progress 2s 1 forwards;
+    -ms-animation: progress 2s 1 forwards;
+    animation: progress 2s 1 forwards;
+    text-align:center;
+}
+#progress1 {
+    background: #77b4be; /*-- Color of the bar --*/
+    height: 17px;
+    width: 0%;
+    max-width: 100%;
+    float: left;
+    -webkit-animation: progress1 2s 1 forwards;
+    -moz-animation: progress1 2s 1 forwards;
+    -ms-animation: progress1 2s 1 forwards;
+    animation: progress1 2s 1 forwards;
+    text-align:center;
+}
+#progress2 {
+    background: #77b4be; /*-- Color of the bar --*/
+    height: 17px;
+    width: 0%;
+    max-width: 100%;
+    float: left;
+    -webkit-animation: progress2 2s 1 forwards;
+    -moz-animation: progress2 2s 1 forwards;
+    -ms-animation: progress2 2s 1 forwards;
+    animation: progress2 2s 1 forwards;
+    text-align:center;
+}
+#pbaranim {
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+    background: url('http://www.cssdeck.com/uploads/media/items/7/7uo1osj.gif') repeat-x;
+    -moz-opacity: 0.25;
+    -khtml-opacity: 0.25;
+    opacity: 0.25;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=25);
+    filter: alpha(opacity=25);
+    color:#000;
+    font-weight:bolder;
+}
+
+/*--- ProgressBar attributes -----*/
+@-webkit-keyframes progress { 
+    from {  }
+
+    to { }
+}
+
+@-moz-keyframes progress { 
+    from {  }
+
+    to {  }
+}
+
+@-ms-keyframes progress { 
+    from { }
+
+    to {  }
+}
+@keyframes progress { 
+    from { }
+
+    to { width: 83% }
+}
+@keyframes progress1 { 
+    from { }
+
+    to { width: 75% }
+}
+@keyframes progress2 { 
+    from { }
+
+    to { width: 63% }
+}
+/*---- Progress Bar ---*/
+
+/*--- SocialMedia Icons Starts Here -----*/
+ul.social{
+	padding:0;
+	margin-top:1em;
+	margin-left: 10em;
+}
+ul.social li{
+	display:inline-block;
+}
+ul.social li i{
+	width:25px;
+	height:25px;
+	background:url(../images/social-icons.png)no-repeat;
+	display: inline-block;
+	cursor: pointer;
+}
+ul.social li i.fa{
+	background-position:0px 0px;
+}
+ul.social li i.tw{
+	background-position:-26px 0px;
+}
+ul.social li i.in{
+	background-position:-53px 0px;
+}
+ul.social li i.pw{
+	background-position:-81px 0px;
+}
+/*--- SocialMedia Icons Ends Here -----*/
+
+
+
+  
+/* Self Clearing Goodness */
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+.row:after,
+.clearfix:after {
+  clear: both; }
+.row,
+.clearfix {
+  zoom: 1; }
+
+
+
+
+   /*----Responsives Here ---*/
+
+@media (max-width:480px){
+	p.show-not {
+		display: none;
+	}
+	.about-row {
+		padding: 1em 0 1em 0;
+	}	
+}	
+@media (max-width:640px){
+			h3.top-title {
+				font-size: 1.5em;
+				margin: 0em 0 0.3em 0;	
+			}
+			.about h4 {
+				font-size: 1.3em;
+			}
+			.about-row-column img {
+				width: 40%;
+			}
+			.about-column h3 {
+				font-size: 1.5em;
+				text-align: center;
+			}
+			.about h4 {
+				font-size: 1.1em;
+				text-align: center;
+			}
+			.about p {
+				font-size: 14px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			.about-column h5 {
+				text-align: center;
+				font-size: 1.1em;
+				margin-top: 0.4em;
+			}
+			#progressbar {
+				margin: 0 auto;
+			}
+			.about-column {
+				text-align: center;
+			}
+}
+			
+			
+@media (max-width:800px){
+	.about-row-column {
+		text-align: center;
+	}
+	.about-row-column img {
+		width: 40%;
+	}
+	h3.top-title {
+		font-size: 2em;
+		margin: 0em 0 0.3em 0;
+	}
+	.about p {
+		width: 90%;
+		font-size: 15px;
+	}
+	.about h4 {
+		font-size: 1.5em;
+	}
+}
+ /*----Responsives Ends ---*/
+   
+
+
+.bluring:hover {
+	 cursor: -moz-zoom-in;
+}
+

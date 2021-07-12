@@ -1,0 +1,91 @@
+/*-- Footer starts Here --*/
+.footer{
+	background:#201f21;
+	padding:2em 0;
+	text-align:center;
+}
+p.copyright{
+	color:#fff;
+	font-size:14px;
+}
+p.copyright a{
+	text-decoration:none;
+	color:#77b4be;
+}
+p.copyright a:hover{
+	color:#fff;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+	-moz-transition:0.5s all;
+}
+ul.footer-icons{
+	padding:0;
+	margin-bottom:1em;
+}
+ul.footer-icons li{
+	display: inline-block;
+}
+ul.footer-icons li i{
+	width:65px;
+	height:64px;
+	background:url(../images/footer-icons.png)no-repeat;
+	display:inline-block;
+	cursor:pointer;
+}	
+
+ul.footer-icons li i.fb{
+	background-position:0px 0px;
+}
+ul.footer-icons li i.twit{
+	background-position:-68px 0px;
+}
+ul.footer-icons li i:hover {
+	opacity: 0.5;
+}
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	overflow: hidden;
+	width: 32px;
+	height: 32px;
+	border: none;
+	text-indent: 100%;
+	background: url(../images/top-move.png) no-repeat 0px 0px;
+    opacity: .5;
+}
+#toTop:Hover{
+    opacity: 1;
+}
+/*-- Footer Ends Here --*/
+
+
+/*--- Media Queries Starts here ---*/
+@media (max-width:480px){
+ul.footer-icons li i {
+    width: 32px;
+    height: 32px;
+    background: url(../images/footer-icons.png)no-repeat;
+    display: inline-block;
+    cursor: pointer;
+    background-size: 222%;
+}
+ul.footer-icons li i.fb {
+    background-position: 1px -2px;
+}
+ul.footer-icons li i.twit {
+    background-position: -40px -2px;
+}
+.footer {
+    padding: 1em 0;
+}
+ul.footer-icons {
+    padding: 0;
+    margin-bottom: 0em;
+}
+}
+/*--- Media Queries Ends here ---*/
