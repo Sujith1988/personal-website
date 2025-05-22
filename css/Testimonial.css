@@ -1,61 +1,56 @@
-
-h4, h5, h6,
-h1, h2, h3 {margin-top: 0;}
-ul, ol {margin: 0;}
-p {margin: 0;}
-html,body{
-	font-family: 'PT Sans', sans-serif;
-	background:#fff;
-}
-
-
-
 /*--- Testimonials Parts Starts Here ----*/
-.testimonial{
-	background: #f7f7f3;
-	padding:2em 0;
-    height: 16em;
+.mrg2{
+	padding-top: .05em;
 }
-h2.top-title{
+.testimonial{
+	background: rgb(44, 52, 61);
+	padding: 0.5em 0.5em;
+    height: 8em;
+}
+.testimonial h2.top-title{
 	font-size:1.4em;
 	color:#000;
 	font-weight:600;
 	text-transform:uppercase;
 	text-align:center;
-	margin:-.5em 0 0.0em 0;
+	margin:5em 0 0.0em 0;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.about h5{
-	font-size:1.4em;
+.testimonial h5{
+	font-size:1.8em;
+	color: rgb(206, 206, 206);
 	font-weight: 500;
-	text-align:center;
-	margin-bottom:1em;
+	text-align:right;
+	margin-bottom:.5em;
+	margin-top:0em;
 	text-transform:capitalize;
-	font-style: italic;
+	font-family:'Times New Roman', Times, serif;
 }
-blockquote.style1{
-	font: 18px/30px normal Tahoma, sans-serif;
+.testimonial blockquote.style1{
 	padding-top: 0px;
 	margin: 0px;
-	background-image: url(../images/quote-left.png);
+	/* background-image: url(../images/quote-left.png); */
 	background-position: top left;
 	background-repeat: no-repeat;
 	text-indent: 37px;
 }
-blockquote.style1 span {
+.testimonial blockquote.style1 span {
 	display: block;
-	background-image: url(../images/quote-right.png);
+	/* background-image: url(../images/quote-right.png); */
 	background-repeat: no-repeat;
 	background-position: bottom right;
-	text-align:center;
+	text-align: center;
+	color: rgb(206, 206, 206);
 	text-transform:capitalize;
+	font: 16px/20px normal Tahoma, sans-serif;
 	font-family: cursive;
-	font-weight:500;
-	font-size:.9em;
+	font-weight:200;
+	font-size:.8em;
+	
 }
 .testimonial-slide h5{
 	font-size:1.2em;
-	color:#555;
+	color:white;
 	font-weight:400;
 	text-align:center;
 	margin-top:0em;
@@ -121,6 +116,7 @@ blockquote.style1 span {
 	margin: 0;
   }
   .rslides li {
+	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
 	position: absolute;
 	display: none;
@@ -239,6 +235,7 @@ blockquote.style1 span {
    }
 /*---Testimonials-Quats ResponsiveSlides  -----*/
 
+/*----Responsives Here ---*/
 @media (max-width:1200px){ 
 	.callbacks_tabs {
 		top: 490px;
@@ -261,10 +258,5 @@ blockquote.style1 span {
 		top: 500px;
 	}	   
 }
- /*----Responsives Here ---*/
-
-
-
-
-
+ 
  /*----Responsives Ends ---*/

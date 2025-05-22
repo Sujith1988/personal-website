@@ -5782,4 +5782,12 @@ button.close {
     display: none !important;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
+.col-md-3q{
+
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 35px;
+
+}
+/*# sourceMappingURL=bootstrap.css.map*/

@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujith.C.S</title>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+
+    <!-- <script type="application/x-javascript">
+       addEventListener("load", function() { setTimeout(hideURLbar, 0);}, false);
+                function hideURLbar(){ window.scrollTo(0,1);}
+       </script> -->
+      
+    <!-- -----Google Fonts -------
+         <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'> 
+         -----Google Fonts ------->
+   
+    <!-- Custom styles -->
+    <link href="css/AboutMe.css" rel="stylesheet" type="text/css" />
+    <link href="css/Contacts.css" rel="stylesheet" type="text/css" />
+    <link href="css/Footer.css" rel="stylesheet" type="text/css" />
+    <link href="css/Mixitup.css" rel="stylesheet" type="text/css" />
+    <link href="css/NavBar.css" rel="stylesheet" type="text/css" /><!--necessary for navbar-->
+    <link href="css/Services.css" rel="stylesheet" type="text/css" />
+    <link href="css/Testimonial.css" rel="stylesheet" type="text/css" /><!--necessary for JavaScript plugins responsiveSlider-->
+     <!-- css (necessary for Bootstrap's JavaScript plugins) -->
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' /><!--necessary for overall styling-->
+</head>
+
+<body>
+  
+    <!-- Easing nav click scrolling into smooth drag-->
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top - 60}, 500, 'linear');
+            });
+        });
+    </script>
+    <!-- Easing nav click scrolling into smooth drag-->
+
+
+        
+
+
+
+    <!--------------------- Header Starts Here ------------------->
+    <header class="header " id="home">
+        <div class="container ">
+
+            <div class="col-sm-12 col-md-4 meimgDiv">
+                <img src="images/me.jpg" alt="Oops" class="meimg rounded-circle img-fluid">
+            </div>
+
+
+            <div class="col-sm-12 col-md-8 textpagerDiv">
+                <div class="slide-content"
+                    style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+                    <h2>
+                        SUJITH C S<br>
+                        SOFTWARE TESTING AND AUTOMATION ENGINEER
+                    </h2>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!--------------------------- Header Ends Here ----------------->
+
+
+
+
+
+    <!------------------- Navigation Starts Here ------------------->
+    <!-- top-nav -->
+    <div class="top-nav">
+        <nav>
+            <span class="menu"></span>
+            <ul>
+                <li><a href="#about" class="scroll">About Me</a></li>
+                <li><a href="#work" class="scroll">Work</a></li>
+                <li class="active"><a href="#home" class="scroll">Home</a></li>
+                <li><a href="#service" class="scroll">Experience</a></li>
+                <li><a href="#contact" class="scroll">Contact</a></li>
+                <div class="clearfix"> </div>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- top-nav button tggledown anim -->
+    <script>
+        $("span.menu").click(function () {
+            $(".top-nav ul").slideToggle("slow", function () {
+                // Animation complete.
+            });
+        });
+    </script>
+
+
+    <!-- top-nav bar fixing while scrolling-->
+    <script>
+        $(document).ready(function () {
+            var navoffeset = $("nav").offset().top;
+            $(window).scroll(function () {
+                var scrollpos = $(window).scrollTop();
+                if (scrollpos >= navoffeset) {
+                    $("nav").addClass("fixed");
+                } else {
+                    $("nav").removeClass("fixed");
+                }
+            });
+        });
+        // Pointer move to active tab from the inactive.
+        $(document).ready(function () {
+            $("nav ul li a").click(function () {
+                $(this).parent().addClass("active");
+                $(this).parent().siblings().removeClass("active");
+            });
+        });
+    </script>
+
+    <!-- top-nav -->
+    <!----------------------------- Navigarion Ends Here -------------------->
+
+
+     <!--- About Me Starts Here ---------------------------------------->
+    <section class="about" id="about">
+        <div class="container ">
+
+        <!--- Initial text content ---->
+        <h3 class="top-title">About me</h3>
+        <h4>Why Me?</h4>
+        <p>
+            I'm a passionate QA Automation Engineer with hands-on experience in the FinTech domain, focused 
+            on building scalable and reliable test frameworks using Selenium, Java, and TestNG. I bring expertise 
+            in API testing, performance testing, and containerized test environments using tools like Postman, 
+            JMeter, Docker, and AWS.</p>
+        <p>
+            With a solid understanding of SDLC and STLC, I follow a structured approach to test planning, 
+            execution, and reporting. I'm proficient in Git, GitHub, and GitLab for version control and 
+            collaborative development.</p>
+        <p>
+            In addition to automation, I’m well-versed in backend validation using SQL Server, and familiar with 
+            front-end technologies like HTML, CSS, JavaScript, and Bootstrap, enabling a full-stack testing 
+            perspective. I also have experience deploying front-end applications to Apache Tomcat Web Server, 
+            supporting test environments and staging setups.</p>
+        <p>
+            I have experience working with ISO 8583 financial messaging standards and analyzing network protocols 
+            such as TCP and HTTP using tools like Wireshark. I’ve worked in Agile/Scrum environments using Jira, 
+            and am comfortable deploying and managing Linux-based environments (e.g., Ubuntu Server on VMware) for 
+            testing and application hosting.</p>
+        
+        
+        <p id="bold">SOFTWARES AND TOOLS FAMILIAR WITH:</p>
+        <ul>
+            <li>Selenium WebDriver</li>
+            <li>TestNG</li>
+            <li>Postman</li>
+            <li>JMeter</li>
+            <li>Docker</li>
+            <li>AWS</li>
+            <li>SQL Server</li>
+            <li>Git, GitHub, GitLab</li>
+            <li>Apache Tomcat</li>
+            <li>Wireshark</li>
+            <li>Jira</li>
+            <li>HTML, CSS, JavaScript, Bootstrap</li>
+        </ul>
+
+
+        <p>
+            <a href="files/resume.pdf" download="SujithCSResume.pdf" class="">View /</a>
+            <a href="files/resume.zip" download="SujithCSResume.zip" class="">Download Resume</a></p>
+
+
+    </div>
+    </section> <!------------- About Me Ends Here ---------------------------->
+
+
+
+
+
+
+    <!--- Academic Records Starts Here ---------------------------------------->
+    <section class="about" id="about">
+        <div class="col-md-12 oldstyle"><h4><strong style="font-size: larger;" >Academic Records</strong> </h4></div>                                       
+        <div class="container">
+            
+
+            <!--- Academic Records ---->
+            <div class="row about-row"> 
+
+                
+
+                <!-- SCHOOL -->
+                 <div class="col-md-1"></div>
+                <div class="col-md-3  about-column">
+
+                    <h4 class="oldstyle"> <strong>School</strong> </h4>
+                    <h4 class="oldstyle1">St.Joseph's High School, Mathilakam <br>Marks Scored : 83%</h4>
+                    
+                  
+                    <!---Document with image-magnification using popup-script ---->
+                    <div style="background-color:#5f5e5e ; margin-top: 1em;">
+                        <a href="#small-dialog111" class="popup-with-zoom-anim oldstyle3">View Document
+                            <!-- Document -->
+                            <div>
+                                <!-- <image src="images/index1.jpg" style="height: 10em;width: 25em" class="bluring"></image> -->
+                                <!-- <h5 class="oldstyle">View Document </h5> -->
+                            </div>
+                        </a>
+                        <!-- bottom text area -->
+                        <div style="margin-bottom: .5em;width: 33em;"></div>
+                    </div>
+
+                </div>
+                <div class="clearfix"></div>
+
+                <!-- SCHOOL -->
+                <div class="col-md-4 about-column">
+
+                    <h4 class="oldstyle"><strong>Higher secondary school</strong> </h4>
+                    <h4 class="oldstyle1">SNM Higher SecondarySchool, Moothakunnam <br> Marks Scored :75%</h4>
+                    
+
+                    <div style="background-color:#5f5e5e ; margin-top: 1em;">
+                        <a href="#small-dialog10" class="popup-with-zoom-anim oldstyle3">View Document
+                            <div>
+                                <!-- <image src="images/index2.jpg" style="height: 10em;width: 25em" class="bluring"></image> -->
+                                <!-- <h5 class="oldstyle">View Document </h5> -->
+                            </div>
+                        </a>
+                        <div style="margin-bottom: .5em;width: 33em;"></div>
+                    </div>
+
+                </div>
+                <div class="clearfix"></div>
+
+                <!-- SCHOOL -->
+                <div class="col-md-3 about-column">
+
+                    <h4 class="oldstyle"><strong>Degree</strong> </h4>
+                    <h4 class="oldstyle1">Government Engineering College, Idukki <br>Marks Scored : 63%</h4>
+                
+
+                    <div style="background-color:#5f5e5e ; margin-top: 1em;">
+                        <a href="#small-dialog11" class="popup-with-zoom-anim oldstyle3">View Document
+                            <div>
+                                <!-- <image src="images/index3.jpg" style="height: 10em;width: 25em" class="bluring"></image> -->
+                                <!-- <h5 class="oldstyle">View Document </h5> -->
+                            </div>
+                        </a>
+                        <div style="margin-bottom: .5em;width: 33em;"></div>
+                    </div>
+
+                </div>
+                <div class="clearfix"></div>
+
+            </div><!---Academic Records---->
+        </div><!---Container---->
+
+
+        <!--------- Magnified popup for Academic Records --------->
+        <!---pop-up-box---->
+        <div class="container">
+            <script type="text/javascript" src="js/modernizr.custom.min.js"></script>
+            <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+            <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+            <!---//pop-up-box---->
+
+            <!---Magnified popup method ---->
+            <!-- <script type="text/javascript" src="js/magni.js"></script> -->
+            <!-- This is already written under 'Works' so   no need to write here again  -->
+
+            <!---Magnified image popsup from here---->
+            <div id="small-dialog111" class="mfp-hide">
+                <div class="image-top">
+                    <img src="images/index1.jpg" alt="" />
+                    <p></p>
+                </div>
+            </div>
+            <div id="small-dialog10" class="mfp-hide">
+                <div class="image-top">
+                    <img src="images/index2.jpg" alt="" />
+                    <p></p>
+                </div>
+            </div>
+            <div id="small-dialog11" class="mfp-hide">
+                <div class="image-top">
+                    <img src="images/index3.jpg" alt="" />
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section><!--------------- Academic Records Ends Here ------------------------------>
+    
+
+
+
+
+<!--- Testimonial Starts here --->
+<section class="testimonial">
+    <div class="container mrg2">
+        <div class="col-md-12 ">
+            <!-- <h2 class="top-title ">What influenced me in life</h2> -->
+            <!-- <div class="col-md-3"><h5 >Quates influenced me :</h5></div> -->
+
+            <!---  Slider script --->
+            <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+            <script src="js/responsiveslides.min.js"></script>
+            <script>
+                // You can also use "$(window).load(function() {"
+                $(function () {
+                    // Slideshow 2
+                    $("#slider2").responsiveSlides({
+                        auto: true,
+                        pager: false,
+                        nav: false,
+                        speed: 1000,
+                        timeout: 10000, 
+                        namespace: "callbacks",
+                        before: function () {
+                            $('.events').append("<li>before event fired.</li>");
+                        },
+                        after: function () {
+                            $('.events').append("<li>after event fired.</li>");
+                        }
+                    });
+
+                });
+            </script>
+
+            <!-- Slides -->
+            <div id="top" class="callbacks_container col-md-12">
+                <ul class="rslides" id="slider2">
+                    <li>
+                        <div class="testimonial-slide">
+                            <blockquote class="style1" >
+                                <span>" Continously learning on daily basis is what matters on mastering a
+                                    skill<br> Consistency is the key to success "</span>
+                            </blockquote>
+                            <h5>...</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="testimonial-slide">
+                            <blockquote class="style1">
+                                <span>" You should find happiness on what You do than spending time in search
+                                    of it.<br> Our mind is designed to adapt on what we practice regularly "</span>
+                            </blockquote>
+                            <h5>...</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="testimonial-slide">
+                            <blockquote class="style1">
+                                <span>" Nothinig is hard once You learned it well, <br>things felt very hard are
+                                    those You not yet learned well " </span>
+                            </blockquote>
+                            <h5>...</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div><!-- Slides -->
+
+        </div><!-- Col -->
+    </div><!-- Container -->
+</section>
+
+<!--- Testimonial Ends here --->
+
+
+
+
+ <!--------------------- Featured Work Starts Here ------------------------->
+
+    <!-- jQuery (necessary for Mixitup JavaScript plugins) -->
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+    <!--- MixItUp js method ---->
+    <script>
+        $(function () {
+            var filterList = {
+                init: function () {
+                     // MixItUp plugin   http://mixitup.io
+                    $('#portfoliolist').mixitup({
+                        targetSelector: '.portfolio',
+                        filterSelector: '.filtu',
+                        effects: ['fade'],
+                        easing: 'snap'
+                    });
+                }
+            };
+            // Run the show!
+            filterList.init();
+        });
+    </script>
+
+    
+    <section class="feature" id="work">
+        <div class="container about-row1">
+            <h3 class="top-title">Works</h3>
+
+
+            <div class="portfoliou">
+                <!--filterSelector:  Filtering starts using the data-filter, in the selector-class filtu -->
+                <ul id="filters" class="clearfix">
+                    <li><span class="filtu active" data-filter="wds wdv dbi scd web">All items</span></li>
+                    <li><span class="filtu" data-filter="wds"> webdesign</span></li>
+                    <li><span class="filtu" data-filter="wdv">Test Automation</span></li>
+                    <li><span class="filtu" data-filter="dbi">Manual Test</span></li>
+                   
+                    <!-- <li><span class="filtu" data-filter="scd2">Test1</span></li>
+                    <li><span class="filtu" data-filter="scd3">Test2</span></li> -->
+                    <li><span class="filtu" data-filter="scd">scada design</span></li>
+                </ul>
+
+                <div id="portfoliolist">
+                    <!--  targetSelector:  Filtering progress using the data-filter, in the target-class portfolio -->
+                    <div class="portfolio wds mix_all" data-cat="wds" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="#small-dialog" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+                                <img src="images/WBST1.JPG" />
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left    b-delay03 "><p class = "mrgn-top">Click-here</p></h2>
+                                    <p class="b-animate b-from-right    b-delay03 ">Dynamic Website using JS
+                                        <br><span class="m_4">Personal Website</span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio wdv mix_all" data-cat="wdv" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="#small-dialog1" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+                                <img src="images/AUTO1.JPG" />
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left    b-delay03 "><p class = "mrgn-top">Click-here</p></h2>
+                                    <p class="b-animate b-from-right    b-delay03 ">Automation Testing using Selenium Webdriver.
+                                        <br><span class="m_4">EFT Switch UI Function Testing</span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio dbi mix_all" data-cat="dbi" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="#small-dialog2" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+                                <img src="images/MAN1.JPG" />
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left    b-delay03 "><p class = "mrgn-top">Click-here</p></h2>
+                                    <p class="b-animate b-from-right    b-delay03 ">System Test, Funcion Test, Integration Test & Performance Test
+                                        <br><span class="m_4">EFT Switch UI and backend Applications</span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio scd mix_all" data-cat="scd" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="#small-dialog3" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+                                <img src="images/SCADA1.JPG" />
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left    b-delay03 "><p class = "mrgn-top">
+                                        Click-here</p></h2>
+                                    <p class="b-animate b-from-right    b-delay03 ">Supervisory Control And Data Acquisition
+                                        <br><span class="m_4">Site Commitioning and Development</span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- <div class="portfolio scd mix_all" data-cat="scd1" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="#small-dialog3" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+                                <img src="images/AUTO4.JPG" />
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left    b-delay03 "><p class = "mrgn-top">
+                                        Click-to-zoom</p></h2>
+                                    <p class="b-animate b-from-right    b-delay03 ">Lorem ipsum dolor sit
+                                        amet.<br><span class="m_4">Photography</span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="#small-dialog4" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+                                <img src="images/pic5.jpg" />
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png"
+                                            alt="" /></h2>
+                                    <p class="b-animate b-from-right    b-delay03 ">Lorem ipsum dolor sit
+                                        amet.<br><span class="m_4">Photography</span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+            <div class="clearfix"></div>
+
+
+
+            <!---Magnified popup method (This script is also used in 'academic records Me') ---->
+            <script>
+                $(document).ready(function () {
+                    $('.popup-with-zoom-anim').magnificPopup({
+                        type: 'inline',
+                        fixedContentPos: false,
+                        fixedBgPos: true,
+                        overflowY: 'auto',
+                        closeBtnInside: true,
+                        preloader: false,
+                        midClick: true,
+                        removalDelay: 300,
+                        mainClass: 'my-mfp-zoom-in'
+                    });
+
+                });
+            </script>
+
+            <!---Magnified image popsup from here (Magnified image and message) ---->
+            <div id="small-dialog" class="mfp-hide">
+                <div class="image-top">
+                    <!-- <img src="images/pic1x.jpg" alt="" /> -->
+                    <p> This WebSite is designed using visual studio sdk. Javascript pluggins like -<br>
+                        - Top-Nav, <br>
+                        -  Responsive-Slides, <br>
+                        - Mixitup-Portfolio etc. <br>
+                        are used here. Also - <br>
+                        - Bootstrap 4.1, <br>
+                        - Jquery 3.6, <br>
+                        - AJAX and Html 4  <br>have been used in this design. </p>
+                    <p>Next Line</p>  
+                       
+             
+                    <p><a class="big" href="http://127.0.0.1:5501/OfficialWeb.html">Link to GitHub</a></p>
+                </div>
+            </div>
+
+            <div id="small-dialog1" class="mfp-hide">
+                <div class="image-top">
+                    <!-- <img src="images/pic2.jpg" alt="" /> -->
+                    <p>
+                        The Testing of the EFT Switch application UI is automated using the Selenium WebDriver. The
+                        automation project is set up from the scratch in Maven hybrid framework format with data 
+                        driven capabilities using the TestNG annotations. The Pgae Object Model(POM) design structre 
+                        having page wise locators and actions encapsulated in specific classes, is used to obtain
+                        maximum compactibility and reusability of the test cases.
+                    </p>
+                        <p>The Frame work design follows - <br>
+                             - src/main/java -> testBase, utils, listeners, pages, dataProviders<br>
+                             - src/main/resources -> config and locators files  <br>
+                             - src/test/java -> test cases    <br>
+                             - src/test/resources -> test data, test suites </p>
+                        <p>The test data is fed from the excel sheets. Seperate suites files are used for various 
+                            types of tests by grouping the tests in various classes. That is distinct suites for 
+                            reggression test and smoke test using the methods from the same classes which are 
+                            distinguished with the groupe names</p>
+                        <p>Next Line</p>
+                        <p><a class="big" href="https://github.com/Sujith1988/EFTSwitchAutomation">Link to GitHub</a></p>
+                </div>
+            </div>
+
+            <div id="small-dialog2" class="mfp-hide">
+                <div class="image-top">
+                    <!-- <img src="images/pic3.jpg" alt="" /> -->
+                    <p>Following Manual testing procedures have been conducted on various releases of the applications 
+                        for the EFT Switch UI and back end. The function, system, integration and Performance testing 
+                        have been conducted to verify the optimum quality of the product</p>
+                        <p>Functionalities</p>  
+                        <p>The system</p>   
+                        <p>Integration Testing</p>   
+                        <p>Performance Testing using the Apache Jmeter Source simulator</p>     
+                        <p><a class="big" href="http://127.0.0.1:5501/OfficialWeb.html">Link to GitHub</a></p>
+                </div>
+            </div>
+
+            <div id="small-dialog3" class="mfp-hide">
+                <div class="image-top">
+                    <img src="images/pic4.jpg" alt="" />
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley of type and scrambled it to make a type specimen book. It has survived not only five
+                        centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                        passages, and more recently with desktop publishing software like Aldus PageMaker including
+                        versions of Lorem Ipsum.</p>
+                        <p>Next Line</p>  
+                        <p>Next Line</p>   
+                        <p>Next Line</p>   
+                        <p>Next Line</p>     
+                        <p><a class="big" href="http://127.0.0.1:5501/OfficialWeb.html">Link to GitHub</a></p>
+                </div>
+            </div>
+
+            <!-- <div id="small-dialog4" class="mfp-hide">
+                <div class="image-top">
+                    <img src="images/pic5.jpg" alt="" />
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley of type and scrambled it to make a type specimen book. It has survived not only five
+                        centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                        passages, and more recently with desktop publishing software like Aldus PageMaker including
+                        versions of Lorem Ipsum.</p>
+                </div>
+            </div> -->
+
+
+
+        </div><!-- Container -->
+    </section>
+
+    <!-------------------------- Featured Work Ends Here ----------------------------------------->
+
+
+
+
+
+
+    <!--------------------- Services Starts Here ---------------------->
+    <section class="services" id="service">
+        <div class="container">
+            <h3 class="top-title">Experience</h3>
+            <div class="row services-row">
+                <div class="col-md-12 services-column">
+                    <h4>Automation Testing Using Selenuim WebDriver :-</h4>
+                    <!-- <i class="icon1"></i> -->
+                    <p> Hands-on experience with Selenium WebDriver for automated UI testing. Skilled in setting 
+                        up automation frameworks from scratch, including Maven-based hybrid frameworks with reusable 
+                        test components. Proficient in implementing TestNG annotations to provide reusable test 
+                        frameworks with data-driven testing capabilities.                                                                   
+                        </p>
+                </div>
+
+                <div class="col-md-12 services-column">
+                    <h4>Software Testing(Manual) :-</h4>
+                    <!-- <i class="icon2"></i> -->
+                    <p>Solid understanding of SDLC (Software Development Life Cycle) and STLC (Software 
+                        Testing Life Cycle), ensuring a methodical approach to test planning, execution, 
+                        and reporting. Experienced in REST API testing using Postman, with a good grasp 
+                        of request/response handling, parameterization, and assertions for test validation. 
+                        Hands-on experience with Apache JMeter for load and performance testing of web 
+                        applications and APIs.                                                
+                        </p>
+                </div>
+    
+                <div class="col-md-12 services-column">
+                    <h4>SCADA Commissioning and Deveopment :-</h4>
+                    <!-- <i class="icon3"></i> -->
+                    <p> Have experience in the field of SCADA software deveopement and site commitioning.Sound knowledge
+                        in Digital Electronics, Electronic Devices & Circuits, Control Systems, High-Speed Networks,
+                        and Data Communication Networks, contributing to a strong analytical and troubleshooting approach.                      
+                        </p>
+                </div>
+    
+            </div>
+    </section>
+    <!-------------------------- Services Ends Here ----------------------->
+
+
+
+
+    <!----------------------- Contact-starts Here ----------------------------->
+    <section class="" id="contact">
+
+        <div class="contact">
+            <div class="contact-map">
+                <!-- googlemap, share, embed a map,copyHTML -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62823.826429187655!2d76.16599660859012!3d10.222075730896083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b081bea3d5a8b29%3A0x4c3b722cea99e6b0!2sKodungallur%2C%20Kerala!5e0!3m2!1sen!2sin!4v1626446080146!5m2!1sen!2sin"                     
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7851.625562882248!2d76.16221535224554!3d10.276663869885427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b081e7dcac7f8fb%3A0xb2d9bd90b1183e7!2sSreenarayanapuram%2C%20Kerala%20680665!5e0!3m2!1sen!2sin!4v1747716690370!5m2!1sen!2sin" 
+                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.000040930292!2d76.14137350932849!3d10.261579389815266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b081f004f2f6591%3A0x2faf87861a8bc512!2sP.vemballur!5e0!3m2!1sen!2sin!4v1747716806120!5m2!1sen!2sin" 
+                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            </div>
+
+            <div class="contact-top ">
+                <h3>Contact</h3>
+                <div class="row contact-top-row">
+
+                    <div class="col-md-4 contact-top-column">
+                        <address>
+                            <p>
+                                Chanassery House.</br>
+                                Kodungallur, S.N.Puram, P.Vemballur, 680671<br>
+                                Kerala.
+                            </p>
+                            <p>Phone: (+91) 9400666053</p>
+                            <p>Fax: (+91) 000-0000</p>
+                            <p><a href="mailto:sujithtrchr@gmail.com">sujithsram@gmail.com</a></p>
+                        </address>
+                    </div>
+                    
+                    <div class="col-md-8 contact-top-column1">
+                        <form action="" method="" id="my-form">
+                            <span class="text-box">
+                                <label class="text-icon"></label>
+                                <input type="text" placeholder="Name" required="" name="Name">
+                            </span>
+                            <div class="text">
+                                <span class="text-box">
+                                    <label class="text-icon2"></label>
+                                    <input type="text" placeholder="Email" required="" name="Email">
+                                </span>
+                            </div>
+                            <div class="text">
+                                <span class="text-box">
+                                    <label class="text-icon3"></label>
+                                    <input type="text" placeholder="Website" required="" name="Website">
+                                </span>
+                            </div>
+                            <div class="text">
+                                <textarea placeholder="Message" required="" name="Message"></textarea>
+                            </div>
+                            <div class="text">
+                                <input type="submit" value="send a message">
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <!-- animated div assign class and HTML content from below java script -->
+                <div id="status" ></div>
+                <!-- ** -->
+                
+            </div><!-- *Animated div is flexed-row-wise in this parent div* -->
+        </div>
+
+    </section>
+
+   
+    <!--googledrive as backend server store data in spreadsheets from formdata and seding mail  -->   
+    <script>
+
+        $("#my-form").submit((e) => {
+            e.preventDefault()
+
+            // routing into form div & animated div
+            var form = document.getElementById("my-form");
+            var status = document.getElementById("status");
+            // actions on animated div when clicking submit button
+            status.innerHTML = "Sending...";
+            status.classList.add('wait')
+
+            $.ajax({
+                // form data to google backend server
+                url: "https://script.google.com/macros/s/AKfycbwrCGZsxKo3Tg0K32rJIOGSEd6B5rAVqYVMhxXmnMuPc0WGAAQhG2U4V6VgCrVgyXUC/exec",
+                data: $("#my-form").serialize(),
+                method: "post",
+                // // actions on animated div after backend respond
+                success: function (response) {
+                    status.innerHTML = "Thanks for your submission!";
+                    status.classList.add('success')
+                    form.reset()
+                    // window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error: function (err) {
+                    //alert("Something Error")
+                    status.innerHTML = "Oops! Please try again"
+                    status.classList.add('error')
+                }
+            })
+
+        });
+    </script>
+    <!-- end script -->
+
+    <!------------------------- Contact-Ends Here ---------------------------->
+
+
+    <!--- Footer Starts here -->
+    <div class="footer">
+        <!-- social media link icons -->
+        <ul class="footer-icons">
+            <li><i class="fb"></i></li>
+            <li><i class="twit"></i></li>
+        </ul>
+        <!-- copy right tag -->
+        <p class="copyright">
+            <a href="#contact">copyright<br></a>
+        </p>
+        <!-- scroll arrow to home -->
+        <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;">
+            </span></a>
+
+    </div>
+    <!--- Footer Ends here --->
+
+
+  <!--css (necessary for Bootstrap) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</body>
+
+</html>

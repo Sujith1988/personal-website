@@ -1,9 +1,18 @@
 /* Styles for dialog window */
 #small-dialog,#small-dialog1,#small-dialog2,#small-dialog3,#small-dialog4,#small-dialog5,#small-dialog6,#small-dialog7,#small-dialog8,#small-dialog9,#small-dialog10,#small-dialog11{
-	background: white;
+	background: rgb(7, 7, 7);
 	padding:20px;
 	text-align: left;
-	max-width: 450px;
+	max-width: 800px;
+	margin: 40px auto;
+	position: relative;
+	text-align:center;
+}
+#small-dialog111{
+  background: rgb(7, 7, 7);
+	padding:20px;
+	text-align: left;
+	max-width: 900px;
 	margin: 40px auto;
 	position: relative;
 	text-align:center;
@@ -84,6 +93,7 @@ opacity: 0;
   z-index: 1043;
   position: fixed;
   outline: none !important;
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden; }
 
 .mfp-container {
@@ -224,7 +234,17 @@ button::-moz-focus-inner {
 .image-top img{
 	width:100%;
 }
+
 .image-top p{
 	text-align: justify;
 	padding:2% 0;
+  font-size:16px;
+	color: rgb(250, 249, 249);
+	font-family:'Times New Roman', Times, serif;
+}
+.image-top .big{
+	padding:2% 0;
+  font-size:16px;
+	color: rgb(114, 114, 185);
+	font-family:'Times New Roman', Times, serif;
 }
