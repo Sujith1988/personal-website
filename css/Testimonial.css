@@ -5,7 +5,7 @@
 .testimonial{
 	background: rgb(44, 52, 61);
 	padding: 0.5em 0.5em;
-    height: 8em;
+    height: 10em;
 }
 .testimonial h2.top-title{
 	font-size:1.4em;
@@ -258,5 +258,28 @@
 		top: 500px;
 	}	   
 }
+@media (max-width:480px){
+	.testimonial blockquote.style1{
+		padding-top: 0px;
+		margin-bottom: 0px;
+		
+		text-indent: 37px;
+	}
+	.testimonial blockquote.style1 span {
+		
+		font-weight:200;
+		font-size:.8em;
+		
+	}
+	.testimonial-slide h5{
+		font-size:1.2em;
+		font-weight:400;
+		margin-top:-1em;
+	}
  
+	.testimonial{
+		background: rgb(44, 52, 61);
+		padding: 0.5em 0.5em;
+		height: 12em;
+	}
  /*----Responsives Ends ---*/
