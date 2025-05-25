@@ -265,7 +265,7 @@ ul#filters {
 }
 @media (max-width:480px){
 	div#portfoliolist {padding: 12px 0px;}
-	.feature {background: rgb(44, 52, 61);padding-top: 1em;}
+	.feature {background: rgb(44, 52, 61);padding-top: 2em;}
 }
 @media (max-width:320px){
 	.contact-top {width: 80%;}
