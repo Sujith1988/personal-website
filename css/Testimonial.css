@@ -136,7 +136,7 @@
   }
   .callbacks_container {
 	position: relative;
-  float: right;
+  float: center;
   width: 100%;
   }
   .callbacks {
