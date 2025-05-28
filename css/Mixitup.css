@@ -268,7 +268,7 @@ ul#filters {
 	.feature {background: rgb(44, 52, 61);padding-top: 2em;}
 
 	#portfoliolist .portfolio {width: 75%;}
-	div#portfoliolist {		padding-left: 30px; }
+	div#portfoliolist {		padding-left: 60px; }
 }
 @media (max-width:320px){
 	.contact-top {width: 80%;}
