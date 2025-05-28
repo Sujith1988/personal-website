@@ -194,6 +194,20 @@ span.text-box input[type="text"]{
      .contact-top h3 {font-size: 1.8em;}
 }
 
+@media (max-width:480px){
+	.contact-top h3 {font-size: 1.8em;}
+	.contact-map iframe{
+		width:90%;
+		height:600px;
+	}
+	.contact-top{
+		padding:1.5em;
+		width:50%;
+		height:175px;
+		position:absolute;
+		top:20%;
+		left:20%;
+}
 @media (max-width:320px){
       span.text-box input[type="text"] {width: 50%;}
 }
