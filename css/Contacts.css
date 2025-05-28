@@ -195,15 +195,15 @@ span.text-box input[type="text"]{
 }
 
 @media (max-width:480px){
-	.contact-top h3 {font-size: 1.8em;}
+	.contact-top h3 {font-size: 2.5em;}
 	.contact-map iframe{
 		width:90%;
 		height:600px;
 	}
 	.contact-top{
 		padding:1.5em;
-		width:50%;
-		height:175px;
+		width:60%;
+		height:210px;
 		position:absolute;
 		top:20%;
 		left:20%;
