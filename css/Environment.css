@@ -67,3 +67,19 @@
 .link-text1:hover {
   color: rgb(95, 67, 187); /* Change to any hover color you prefer */
 }
+
+@media (max-width:580px){
+  .modal-content {
+    padding: 15px;
+    font-size: 15px;            /* Decreased font size */
+    line-height: 1.3; 
+  }
+  
+@media (max-width:480px){
+  .modal-content {  
+    padding: 1;
+    font-size: 14px;            /* Decreased font size */
+    line-height: 1.2; 
+  }
+
+}
