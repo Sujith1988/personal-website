@@ -691,7 +691,7 @@
                                 <!-- Trigger link inside your existing page -->
                                 <p>The Test Environment-Setup Steps : 
                                   <a onclick="openEnvModal();" >
-                                    <span class="link-text1">Click Link</span></a>
+                                    <span class="link-text1">Click Here</span></a>
                                 </p>
                                 
                                 <script>
@@ -714,9 +714,29 @@
                             <h4 class="title2"> Function Testing :</h4>
                            <p> As a part of the UI function testing, the configration for different modules are done 
                             and verifies that the configuration data is properly stored in the database and reflects 
-                            in the UI. The following functions are tested, during each release as regression test - <br> 
-                                                             
-                            <ul class="ulservice">
+                            in the UI. The functions tested during each release as regression test are listed in the 
+                            link  below - <br> 
+                            <p>Tests :
+                                <a onclick="openfunctionModal();" >
+                                    <span class="link-text1">Click Here</span></a>
+                            </p>   
+                            <script>
+                                function openfunctionModal() {
+                                  const modal = document.getElementById('functionModal');
+                                  modal.style.display = 'block';
+                                }
+                                
+                                // Close modal if user clicks outside of it
+                                window.onclick = function(event) {
+                                  const modal = document.getElementById('functionModal');
+                                  if (event.target === modal) {
+                                    modal.style.display = 'none';
+                                  }
+                                };
+                            </script>                             
+                                   
+                           
+                            <!-- <ul class="ulservice">
                                 <li>User configuration : configure different users and check the login using the new 
                                     user credentials.</li>
                                 <li>System Configurations : Fields(Host Name, Host IP, SSL Certificate(key store file) 
@@ -739,8 +759,8 @@
                                 </ul>
 
                             </ul>                             
-                            </p>  
-                           <!-- <p><a class="link-text" href="">Link to GitHub</a></p>  -->
+                            </p>   -->
+                           
 
 
 
@@ -753,9 +773,30 @@
                             for <br> 
                             (i) all the available destination interfaces mds, ngo, b24, isoadapter <br>
                             (ii) and for all the available source interfaces pos, atm, isoadapter 
-                           </p>
-                            <p>Tests :</p>
-                            <ul class="ulservice">
+                           </p>                          
+                            <p>Tests :
+                                <a onclick="openintegrationModal();" >
+                                    <span class="link-text1">Click Here</span></a>
+                            </p> 
+                            
+                            
+                            <script>
+                                function openintegrationModal() {
+                                  const modal = document.getElementById('integrationModal');
+                                  modal.style.display = 'block';
+                                }
+                                
+                                // Close modal if user clicks outside of it
+                                window.onclick = function(event) {
+                                  const modal = document.getElementById('integrationModal');
+                                  if (event.target === modal) {
+                                    modal.style.display = 'none';
+                                  }
+                                };
+                            </script>  
+
+
+                            <!-- <ul class="ulservice">
                                 <li>(0200): transactin request iso message sending using client socket simulator program running in eclipse(java code) and log analysing and 
                                     verification for the responses recieved using the UI. The client sockt program sends the byte formated iso-message over 
                                     tcp (transport layer data transfer) to the server socket of the EFT switch input tcp-interface-module using the server-socket port. 
@@ -771,8 +812,8 @@
                                     tcp (transport layer data transfer) to the server socket of the EFT switch input tcp-interface-module using the server-socket port. 
                                     Then analyse the switches transaction log from DB using the UI and verifies that - it is a success(response-00) or timeout(response-91) or any other type 
                                     of error(response-92,63,etc.).</li>           
-                            </ul> 
-                            <!-- <p><a class="link-text" href="">Link to GitHub</a></p>  -->
+                            </ul>  -->
+                            
 
                             
 
@@ -781,20 +822,68 @@
                             <p>Post deployment of a new release in the production env. we run the typical transaction only and verifies the 
                                 logs to ensure that the system works as expected without any defect. this is done only for the ony 
                                 applicable destination interface for that project -</p>
-                            <p>Tests :</p>    
-                            <ul class="ulservice">
+
+                                <p>Tests :
+                                    <a onclick="opensmokeModal();" >
+                                        <span class="link-text1">Click Here</span></a>
+                                </p> 
+                                
+                                
+                                <script>
+                                    function opensmokeModal() {
+                                      const modal = document.getElementById('smokeModal');
+                                      modal.style.display = 'block';
+                                    }
+                                    
+                                    // Close modal if user clicks outside of it
+                                    window.onclick = function(event) {
+                                      const modal = document.getElementById('smokeModal');
+                                      if (event.target === modal) {
+                                        modal.style.display = 'none';
+                                      }
+                                    };
+                                </script>  
+                       
+                            <!-- <ul class="ulservice">
                                 <li> Initiate the logger on command to start storing the transaction logs. </li>                                                                                         
                                 <li>sending the (0200)-message using the eclipse with client socket simulator program and verifies the transaction log to ensure that 
                                     the expected response code is generated in the log file.</li>
                                 <li>The same way, the (0220) and (0420) msgs are also test and verify.</li>
-                            </ul>                          
-                           <!-- <p><a class="link-text" href="">Link to GitHub</a></p>  -->
-
-
-
-
+                            </ul>                           -->
+                          
+                           
+            
+                            
                            <h4 class="title2"> API Testing :</h4>
-                           <p>EFT Switch : The commands from the UI to the back-end are testecd using the API request via postman -</p>
+                           <p>I have hands-on experience in testing and validating API endpoints using Postman. 
+                            Have performed key backend operations such as enabling/disabling logs, tracing, 
+                            interface control, etc. Additionally, have tested core banking functionalities including 
+                            office and client setup, savings account management, debit/credit transactions, 
+                            account-to-account transfers, and balance enquiries.</p>
+
+                            <p>Tests :
+                                <a onclick="openapiModal();" >
+                                    <span class="link-text1">Click Here</span></a>
+                            </p> 
+                            
+                            
+                            <script>
+                                function openapiModal() {
+                                  const modal = document.getElementById('apiModal');
+                                  modal.style.display = 'block';
+                                }
+                                
+                                // Close modal if user clicks outside of it
+                                window.onclick = function(event) {
+                                  const modal = document.getElementById('apiModal');
+                                  if (event.target === modal) {
+                                    modal.style.display = 'none';
+                                  }
+                                };
+                            </script>  
+
+
+                           <!-- <p>EFT Switch : The commands from the UI to the back-end are testecd using the API request via postman -</p>
                            <ul class="ulservice">
                             <li>logger on/off/clear,</li>
                             <li>TRACE on/off/clear,</li> 
@@ -814,9 +903,9 @@
                                 <li>the account to account transaction</li>
                                 <li>balance enquiry of a savings account</li>
                             </ul>
-                           <p>The postman collection for ref :<a class="link-text" href="">Link to GitHub</a></p> 
+                           <p>The postman collection for ref :<a class="link-text" href="">Link to GitHub</a></p>  -->
 
-
+                          
                            
                            <h4 class="title2"> Performance Testing :</h4>
                            <p>
@@ -825,51 +914,53 @@
                             The goal was to check the maximum possible TPS(transactions per second) that can be performed without failure by the 
                             EFT switch application. If we send 100 messages with a ramp up time of 1second, it means the system is fired with an 
                             input TPS rate of 100. The response messages from the system was recorded using the listerners in the Jmeter.</p> 
-                           <p>The Testplan and Reports :<a class="link-text" href="">Link to GitHub</a></p> 
+                           <p>The jmeter-Testplan and Reports :<a class="link-text" href="">Link to GitHub</a></p> 
+
+                </div>
 
 
+                <div class="col-md-12 services-column about-row11">                       
+                    <h3 class="title1">TECHNOLOGIES FAMILIAR WITH :-</h3>  
+                    <!-- <h4></h4>                            -->
+                    <h4 class="title2"> Docker Implementation and Testing :</h4>
+                    <p>Implemented the docker environment setup in the windows system pulled the image files
+                     of the containerized applications (front-end, back-end and database) of the EFT Switch
+                     from the dockerHub. Created the containerised application instances from the image files.
+                     Testing carried out on the containerised applications.</p> 
+                    <p>The docker images: <a class="link-text" href="">Link to DockerHub</a> 
+                       and implementation documentation :<a class="link-text" href="">Document</a>
+                     </p>
+                                             
 
-                           <h4 class="title2"> Docker Implementation and Testing :</h4>
-                           <p>Implemented the docker environment setup in the windows system pulled the image files
-                            of the containerized applications (front-end, back-end and database) of the EFT Switch
-                            from the dockerHub. Created the containerised application instances from the image files.
-                            Testing carried out on the containerised applications.</p> 
-                           <p>The docker images :<a class="link-text" href="">Link to DockerHub</a></p> 
-                           <p>The implementation documentation :<a class="link-text" href="">Link to GitHub</a></p> 
- 
-
-
-
-                           <h4 class="title2"> AWS Implementation and Testing :</h4>
-                           <p>Implemented the EFT Switch applications (front-end, back-end and database) in the
-                            AWS cloud infrastructure using the ECS container service and the docker images form
-                            the DockerHub.
-                           </p>                            
-                           <p>The implementation documentation :<a class="link-text" href="">Link to GitHub</a></p> 
+                    <h4 class="title2"> AWS Implementation and Testing :</h4>
+                    <p>Implemented the EFT Switch applications (front-end, back-end and database) in the
+                     AWS cloud infrastructure using the ECS container service and the docker images form
+                     the DockerHub.
+                    </p>                            
+                    <p>The implementation documentation :<a class="link-text" href="">Click here</a></p> 
 
 
                            
-                           <h4 class="title2"> SQL Server Performance Enhancement Tuning :</h4>
-                           <p>The performance Enhancement strategies carried out in the SQLServer configuration.</p> 
-                           <p>Tuning document :<a class="link-text" href="">Link to GitHub</a></p> 
+                    <h4 class="title2"> SQL Server Performance Enhancement Tuning :</h4>
+                    <p>The performance Enhancement Tuning strategies carried out in the SQLServer configuration.</p> 
+                    <p>Tuning document :<a class="link-text" href="">Click Here</a></p> 
 
 
 
-                           <h4 class="title2"> WireShark TCP Packet Analysing :</h4>
-                           <p>Data duplication analysed while the transaction processing at the EFT Swich core 
-                            application during the performance testing at higher TPS. Then the same test repeated 
-                            and captured the input data packets and out put data packets and analysis done.
-                            Observed that the input tcp packet frame size increased per packet at higher TPS and 
-                            the core failed to decapsulate it and so duplication occured at the output end. Logic 
-                            modification suggested as a corrective action.
-                             
-                            </p> 
-                           <!-- <p><a class="link-text" href="">Link to GitHub</a></p>  -->
-
-                      
-                          
+                    <h4 class="title2"> WireShark TCP Packet Analysing :</h4>
+                    <p>Data duplication analysed while the transaction processing at the EFT Swich core 
+                     application during the performance testing at higher TPS. Then the same test repeated 
+                     and captured the input data packets and out put data packets and analysis done.
+                     Observed that the input tcp packet frame size increased per packet at higher TPS and 
+                     the core failed to decapsulate it and so duplication occured at the output end. Logic 
+                     modification suggested as a corrective action.                        
+                     </p> 
+                    <!-- <p><a class="link-text" href="">Link to GitHub</a></p>  -->                                           
+                
                 </div>
     
+
+
                 <div class="col-md-12 services-column about-row11">
                     <h4>SCADA Commissioning and Deveopment :-</h4>
                     <!-- <i class="icon3"></i> -->
@@ -1128,10 +1219,174 @@
               </ol>
             </div>
           </div>  
-          <!-- ✅ Modal container - outside all layout wrappers like <section> or <div class="container"> -->
+          <!-- -----------------------------------  -->
+
+             <!-- ✅ Modal container2 -->
+             <div id="functionModal" class="modal container">
+                <div class="modal-content">
+                  <span class="close" onclick="document.getElementById('functionModal').style.display='none'">&times;</span>
+                  <h2>Regression Modules for UI Testing</h2>
+                  <p>The following fuctions have been tested :</p>
+                  <ol>
+                    <li><strong>User Configuration</strong>: Configure different users and verify login using their credentials.</li>
+              
+                    <li><strong>System Configurations</strong>: Set the following fields:
+                      <ul>
+                        <li>Host Name</li>
+                        <li>Host IP</li>
+                        <li>SSL Certificate (keystore file) location</li>
+                        <li>Access password</li>
+                      </ul>
+                    </li>
+              
+                    <li><strong>TCP Interface Module Configuration</strong>: Configure input and output side modules.</li>
+              
+                    <li><strong>ISO Message Translation Interface Module</strong>: Configure both input (sourceNode) and output (sinkNode) modules.</li>
+              
+                    <li><strong>Group Configuration</strong>: Configure source group, destination group, card group, and routing group.</li>
+              
+                    <li><strong>BIN Configuration</strong>: Configure the BIN in the card group matching the BIN used in ISO message from the source simulator.</li>
+              
+                    <li><strong>Route Configuration</strong>: Configure a route:
+                      <ul>
+                        <li>Card Group → Routing Group → Destination Group → Output ISO message translation module</li>
+                      </ul>
+                    </li>
+              
+                    <li><strong>UI Command Testing</strong>: Test communication from UI to back-end app with the following commands:
+                      <ul>
+                        <li>logger on/off/clear</li>
+                        <li>TRACE on/off/clear</li>
+                        <li>interfaces connect/disconnect</li>
+                        <li>echo</li>
+                        <li>key exchange</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              
+            <!-- -----------------------------------  -->
+
+
+            
+
+             <!-- ✅ Modal container3 -->
+            <div id="integrationModal" class="modal container">
+                <div class="modal-content">
+                  <span class="close" onclick="document.getElementById('integrationModal').style.display='none'">&times;</span>
+                  <h2>Integration Testing</h2>
+                  <p>The following test cases demonstrate the ISO transaction request process using a 
+                    client socket simulator and verify the transaction status via UI and logs files:</p>
+                  <ol>
+                    <li><strong>Transaction Type (0200)</strong>: 
+                      <p>
+                        Send an ISO transaction request using a client socket simulator program (Java, 
+                        Eclipse). The byte-formatted ISO message is transmitted over TCP to the EFT Switch 
+                        server socket (input TCP interface module).
+                      </p>
+                      <p>
+                        Use the UI to analyze logs stored in the log files and confirm the response 
+                        type (00, 91, 92, etc.). The same will be verified in the database table also.
+                      </p>               
+                    </li>
+              
+                    <li><strong>Transaction Type (0220)</strong>: 
+                      <p>
+                        Similar to the 0200 test. The ISO 0220 transaction request is sent via the same 
+                        client socket simulator. The byte-formatted message is transferred over TCP to 
+                        the server socket of the EFT switch input module.
+                      </p>
+                      <p>
+                        Use the UI to analyze logs stored in the log files and confirm the response 
+                        type (00, 91, 92, etc.). The same will be verified in the database table also.
+                      </p>
+                    </li>
+              
+                    <li><strong>Transaction Type (0420)</strong>: 
+                      <p>
+                        Send an ISO 0420 message through the Java-based client simulator to the EFT Switch 
+                        TCP server port. This message simulates a reversal or correction.
+                      </p>
+                      <p>
+                        Logs are verified using the UI to determine if the response signifies a successful 
+                        reversal, a timeout, or another error. The same will be verified in the database 
+                        table also.
+                      </p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+               <!-- -----------------------------------  -->
 
 
 
+
+
+                <!-- ✅ Modal container4 -->
+               <div id="smokeModal" class="modal container">
+                <div class="modal-content">
+                  <span class="close" onclick="document.getElementById('smokeModal').style.display='none'">&times;</span>
+                  <h2>Smoke Tests</h2>
+                 
+                  <ol>
+                    <li><strong>Start Logging</strong>: 
+                      <p>Initiate the <code>logger on</code> command to begin capturing transaction logs in the system.</p>
+                    </li>
+              
+                    <li><strong>Send 0200 Message</strong>: 
+                      <p>
+                        Use the client socket simulator program (Java in Eclipse) to send a byte-formatted ISO 0200 message over TCP. After transmission, verify the transaction log via the UI to ensure the expected response code is recorded.
+                      </p>
+                    </li>
+              
+                    <li><strong>Send 0220 and 0420 Messages</strong>: 
+                      <p>
+                        Repeat the above process for ISO 0220 and 0420 messages. Validate the transaction log entries to confirm that the appropriate response codes are generated for each.
+                      </p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+               <!-- -----------------------------------  -->
+
+
+                <!-- ✅ Modal container5 -->
+               <div id="apiModal" class="modal container">
+                <div class="modal-content">
+                  <span class="close" onclick="document.getElementById('apiModal').style.display='none'">&times;</span>
+                  <h2>API-Based Command and Configuration Testing</h2>
+              
+                  <p><strong>EFT Switch</strong>: The following commands are tested from the UI to the back-end using API requests via Postman:</p>
+                  <ul>
+                    <li><code>logger</code> on / off / clear</li>
+                    <li><code>TRACE</code> on / off / clear</li>
+                    <li><code>interfaces</code> connect / disconnect</li>
+                    <li><code>echo</code></li>
+                    <li><code>key exchange</code></li>
+                  </ul>
+              
+                  <p>Postman collection for reference: 
+                    <a class="link-text" href="">Link to GitHub</a>
+                  </p>
+              
+                  <p><strong>Core Banking – MifoX (Docker Setup)</strong>: The open-source core banking software MifoX is deployed in a Docker container. The following functions are tested using API requests via Postman:</p>
+                  <ul>
+                    <li>Office creation</li>
+                    <li>Client creation under the office</li>
+                    <li>Savings account creation for the client</li>
+                    <li>Debit from the savings account</li>
+                    <li>Credit to the savings account</li>
+                    <li>Account-to-account transaction</li>
+                    <li>Balance enquiry of a savings account</li>
+                  </ul>
+              
+                  <p>Postman collection for reference: 
+                    <a class="link-text" href="">Link to GitHub</a>
+                  </p>
+                </div>
+              </div>
+               <!-- -----------------------------------  -->
 
 
 
