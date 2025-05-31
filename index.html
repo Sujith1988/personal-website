@@ -27,6 +27,7 @@
     <link href="css/Testimonial.css" rel="stylesheet" type="text/css" /><!--necessary for JavaScript plugins responsiveSlider-->
      <!-- css (necessary for Bootstrap's JavaScript plugins) -->
     <link href="css/bootstrap.css" rel='stylesheet' type='text/css' /><!--necessary for overall styling-->
+    <link href="css/Environment.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -683,6 +684,33 @@
                             EFT switch software product.   </p>
 
 
+                            <h4 class="title2"> Environment Setup :</h4>
+                            <p>The test environment setup configuration and readiness checking activites are 
+                                carried out. The steps are available in the below link -</p>    
+                                
+                                <!-- Trigger link inside your existing page -->
+                                <p>The Test Environment-Setup Steps : 
+                                  <a onclick="openEnvModal();" >
+                                    <span class="link-text1">Click Link</span></a>
+                                </p>
+                                
+                                <script>
+                                    function openEnvModal() {
+                                      const modal = document.getElementById('envModal');
+                                      modal.style.display = 'block';
+                                    }
+                                  
+                                    // Close modal if user clicks outside of it
+                                    window.onclick = function(event) {
+                                      const modal = document.getElementById('envModal');
+                                      if (event.target === modal) {
+                                        modal.style.display = 'none';
+                                      }
+                                    };
+                                </script>                             
+  
+
+
                             <h4 class="title2"> Function Testing :</h4>
                            <p> As a part of the UI function testing, the configration for different modules are done 
                             and verifies that the configuration data is properly stored in the database and reflects 
@@ -712,7 +740,7 @@
 
                             </ul>                             
                             </p>  
-                           <p><a class="link-text" href="">Link to GitHub</a></p> 
+                           <!-- <p><a class="link-text" href="">Link to GitHub</a></p>  -->
 
 
 
@@ -744,6 +772,7 @@
                                     Then analyse the switches transaction log from DB using the UI and verifies that - it is a success(response-00) or timeout(response-91) or any other type 
                                     of error(response-92,63,etc.).</li>           
                             </ul> 
+                            <!-- <p><a class="link-text" href="">Link to GitHub</a></p>  -->
 
                             
 
@@ -759,7 +788,7 @@
                                     the expected response code is generated in the log file.</li>
                                 <li>The same way, the (0220) and (0420) msgs are also test and verify.</li>
                             </ul>                          
-                           <p><a class="link-text" href="">Link to GitHub</a></p> 
+                           <!-- <p><a class="link-text" href="">Link to GitHub</a></p>  -->
 
 
 
@@ -835,7 +864,7 @@
                             modification suggested as a corrective action.
                              
                             </p> 
-                           <p><a class="link-text" href="">Link to GitHub</a></p> 
+                           <!-- <p><a class="link-text" href="">Link to GitHub</a></p>  -->
 
                       
                           
@@ -990,6 +1019,122 @@
   <!--css (necessary for Bootstrap) -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-</body>
+    
 
+
+
+
+
+
+    <!-- ✅ Modal container - outside all layout wrappers like <section> or <div class="container"> -->
+        <div id="envModal" class="modal container">
+            <div class="modal-content">
+              <span class="close" onclick="document.getElementById('envModal').style.display='none'">&times;</span>
+              <h2>Environment Setup</h2>
+              <p>The test environment setup readiness checking involves the following steps:</p>
+              <ol>
+                <li><strong>OS Setup</strong>: Ensure the Linux machines hosting the SQL Server, front-end, and back-end apps are ready.</li>
+          
+                <li><strong>Network Configuration</strong>: Verify system network readiness:
+                  <ul>
+                    <li>Ensure IP address, subnet mask, and default gateway are correctly configured.</li>
+                    <li>Confirm the PC is connected to the local network.</li>
+                  </ul>
+                </li>
+          
+                <li><strong>Server and Port Availability</strong>:
+                  <ul>
+                    <li>Use <code>netstat</code> or <code>telnet</code> to check server status and port availability.</li>
+                    <li>Configured ports:
+                      <ul>
+                        <li>Tomcat Webserver: 8081 (HTTP), 8443 (HTTPS)</li>
+                        <li>POSapp server: 3001</li>
+                        <li>ATMapp server: 4001</li>
+                        <li>ISO adapter server: 4003</li>
+                        <li>ISO adapter client: Dynamic (remote server/dummy server port must be specified)</li>
+                        <li>Naigotta client: Dynamic</li>
+                        <li>MDS client: Dynamic</li>
+                        <li>Base24 server: Dynamic</li>
+                        <li>Core processor app TCP-server port: 7878</li>
+                        <li>Core processor app API-server port: 9001 (not used currently)</li>
+                        <li>SQL Server: 1443</li>
+                      </ul>
+                    </li>
+                    <li>Ports to be configured in the firewall for port-forwarding:
+                      <ul>
+                        <li>Webserver UI access port</li>
+                        <li>Server ports for incoming-side TCP interfaces (POS, ATM, ISO)</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+          
+                <li><strong>SQL Server Service</strong>: Verify it's running and accessible via MSMS (SQL Management Studio).</li>
+          
+                <li><strong>Webserver (Apache Tomcat)</strong>: Confirm service is up and UI is accessible via the endpoint URL.</li>
+          
+                <li><strong>Back-end Application (EFT Switch)</strong>:
+                  <ul>
+                    <li>Ensure app is listening on TCP port 7878.</li>
+                    <li>Verify connections from ISO interface modules and UI are functional.</li>
+                  </ul>
+                </li>
+          
+                <li><strong>Database Connectivity</strong>:
+                  <ul>
+                    <li><strong>UI</strong>: Check <code>catalina.log</code> or <code>stderr.log</code> for SQL Server connection status.</li>
+                    <li><strong>Back-end</strong>: Review terminal console logs.</li>
+                  </ul>
+                </li>
+          
+                <li><strong>JMeter Test Plans</strong>:
+                  <ul>
+                    <li>Ensure ISO, POS, and ATM test plans are present in the JMeter binary folder.</li>
+                  </ul>
+                </li>
+          
+                <li><strong>Java JDK 1.8</strong>:
+                  <ul>
+                    <li>Set <code>JAVA_HOME</code> environment variable.</li>
+                    <li>Add Java binary path to system <code>PATH</code> variable.</li>
+                  </ul>
+                </li>
+          
+                <li><strong>Java Command Verification</strong>:
+                  <ul>
+                    <li>Ensure <code>java -version</code> works in terminal.</li>
+                    <li>Include JDK 1.8/JRE 1.8 in Eclipse project classpath.</li>
+                  </ul>
+                </li>
+          
+                <li><strong>ISO Message Simulation Setup</strong>:
+                  <ul>
+                    <li>Import ISO simulation package in Eclipse.</li>
+                    <li>Test outgoing interfaces (Naigotta, MDS, B24) for POS, ATM, ISO input compatibility.</li>
+                  </ul>
+                </li>
+          
+                <li><strong>Tool Verification</strong>:
+                  <ul>
+                    <li><strong>Test Management</strong>: JIRA, TestRail, Zephyr</li>
+                    <li><strong>Bug Tracking</strong>: JIRA</li>
+                    <li><strong>Automation</strong>: GitHub, Selenium, TestNG</li>
+                    <li><strong>Manual Testing</strong>: Eclipse IDE, JDK 1.8, Postman</li>
+                    <li><strong>Performance Testing</strong>: JMeter</li>
+                    <li><strong>Network Analysis</strong>: Wireshark</li>
+                    <li><strong>Other Tools</strong>: MS Office, Microsoft Teams</li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+          </div>  
+          <!-- ✅ Modal container - outside all layout wrappers like <section> or <div class="container"> -->
+
+
+
+
+
+
+    </body>
+    
 </html>

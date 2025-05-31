@@ -1,0 +1,69 @@
+/* Modal container */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* prevent page scroll while modal is open */
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: #fff;
+  padding: 60px;
+  width: 40%;
+  max-height: 80vh;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  font-size: 16px;            /* Increased font size */
+  line-height: 1.6;           /* More line spacing for clarity */
+  text-align: left;
+}
+
+/* Close button */
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+/* Optional: Style headings for better visual hierarchy */
+.modal-content h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.modal-content ol,
+.modal-content ul {
+  padding-left: 20px;
+}
+
+.link-text1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration-line: underline;
+  color: rgb(37, 122, 232);
+  transition: color 0.3s ease; /* Smooth fade on hover */
+}
+
+.link-text1:hover {
+  color: rgb(95, 67, 187); /* Change to any hover color you prefer */
+}
