@@ -114,7 +114,7 @@
      
   .modal-content1 pre{
     font-size: 10px; 
-    max-height: 225px;        /* ✅ Sets max vertical height */
+    max-height: 800px;        /* ✅ Sets max vertical height */
     padding: 10px;
   }
   .modal-content1 h2 {
