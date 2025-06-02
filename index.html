@@ -1164,8 +1164,9 @@
 
     <!-- ✅ Modal container - outside all layout wrappers like <section> or <div class="container"> -->
         <div id="envModal" class="modal container">
-            <div class="modal-content">
+            <div class="modal-content1">
               <span class="close" onclick="document.getElementById('envModal').style.display='none'">&times;</span>
+             
               <h2>Environment Setup</h2>
               <p>The test environment setup readiness checking involves the following steps:</p>
               <ol>
@@ -1268,7 +1269,7 @@
 
              <!-- ✅ Modal container2 -->
              <div id="functionModal" class="modal container">
-                <div class="modal-content">
+                <div class="modal-content1">
                   <span class="close" onclick="document.getElementById('functionModal').style.display='none'">&times;</span>
                   <h2>Regression Modules for UI Testing</h2>
                   <p>The following fuctions have been tested :</p>
@@ -1318,7 +1319,7 @@
 
              <!-- ✅ Modal container3 -->
             <div id="integrationModal" class="modal container">
-                <div class="modal-content">
+                <div class="modal-content1">
                   <span class="close" onclick="document.getElementById('integrationModal').style.display='none'">&times;</span>
                   <h2>Integration Testing</h2>
                   <p>The following test cases demonstrate the ISO transaction request process using a 
@@ -1370,7 +1371,7 @@
 
                 <!-- ✅ Modal container4 -->
                <div id="smokeModal" class="modal container">
-                <div class="modal-content">
+                <div class="modal-content1">
                   <span class="close" onclick="document.getElementById('smokeModal').style.display='none'">&times;</span>
                   <h2>Smoke Tests</h2>
                  
@@ -1398,7 +1399,7 @@
 
                 <!-- ✅ Modal container5 -->
                <div id="apiModal" class="modal container">
-                <div class="modal-content">
+                <div class="modal-content1">
                   <span class="close" onclick="document.getElementById('apiModal').style.display='none'">&times;</span>
                   <h2>API-Based Command and Configuration Testing</h2>
               
@@ -1438,7 +1439,7 @@
 
                <!-- ✅ Modal container5 -->
                <div id="perfmonModal" class="modal container">
-                <div class="modal-content">
+                <div class="modal-content1">
                   <span class="close" onclick="document.getElementById('perfmonModal').style.display='none'">&times;</span>
                   <h2>JMeter Test Plan and Performance Test Report</h2>
               
@@ -1481,37 +1482,37 @@
                  
                      <!-- <pre style="font-family: monospace; font-size: 14px; white-space: pre-wrap; max-height: 800px;"> -->
                         <pre>
-          src/
-          ├── main/
-          │   ├── java/
-          │   │   ├── dataprovider/
-          │   │   │   └── ExcelDataProvider.java
-          │   │   ├── pages/
-          │   │   │   └── LoginPage.java
-          │   │   ├── utils/
-          │   │   │   ├── ExcelUtils.java
-          │   │   │   ├── ConfigReader.java
-          │   │   │   └── LocatorReader.java
-          │   │   ├── base/
-          │   │   │   └── TestBase.java
-          │   │   ├── listeners/
-          │   │   │   ├── TestListener/
-          │   │   │   ├── RetryAnalyzer/
-          │
-          ├── resources/
-          │   ├── config.properties
-          │   └── locators.properties
-          │
-          ├── test/
-          │   ├── java/
-          │   │   └── tests/
-          │   │       └── LoginTest.java
-          │   └── resources/
-          │       ├── testdata/
-          │       │   └── LoginTestData.xlsx
-          │       ├── suites/
-          │       │   ├── smoke-suite.xml
-          │       │   ├── Regression-suite.xml
+        src/
+        ├── main/
+        │   ├── java/
+        │   │   ├── dataprovider/
+        │   │   │   └── ExcelDataProvider.java
+        │   │   ├── pages/
+        │   │   │   └── LoginPage.java
+        │   │   ├── utils/
+        │   │   │   ├── ExcelUtils.java
+        │   │   │   ├── ConfigReader.java
+        │   │   │   └── LocatorReader.java
+        │   │   ├── base/
+        │   │   │   └── TestBase.java
+        │   │   ├── listeners/
+        │   │   │   ├── TestListener/
+        │   │   │   ├── RetryAnalyzer/
+        │
+        ├── resources/
+        │   ├── config.properties
+        │   └── locators.properties
+        │
+        ├── test/
+        │   ├── java/
+        │   │   └── tests/
+        │   │       └── LoginTest.java
+        │   └── resources/
+        │       ├── testdata/
+        │       │   └── LoginTestData.xlsx
+        │       ├── suites/
+        │       │   ├── smoke-suite.xml
+        │       │   ├── Regression-suite.xml
                      </pre>
                    </div>
                  </div>
