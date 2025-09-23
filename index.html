@@ -1493,8 +1493,37 @@
         src/
         ├── main/
         │   ├── java/
+        │   │   
+        │   ├── resources/
+        │   │   
+        │       
+        │
+        ├── test/
+        │   ├── java/
+        │   │   ├── base/
+        │   │   │   └── TestBase.java
+        │   │   │
+        │   │   ├── utils/
+        │   │   │   ├── adminLoginCommon.java
+        │   │   │   ├── Common.java
+        │   │   │   ├── ConfigReader.java
+        │   │   │   ├── LocatorReader.java
+        │   │   │   ├── ExcelUtils.java
+        │   │   │   ├── popupWindwHandlr.java
+        │   │   │   ├── Retry.java
+        │   │   │   ├── ScrollUtil.java
+        │   │   │   ├── SortingRowOfTable.java
+        │   │   │   ├── SqlConnectUtil.java
+        │   │   │   ├── MDS_ISOMsgs_ToSendToServerSocket.java
+        │   │   │   
+        │   │   ├── listeners/
+        │   │   │   ├── DefaultReporting.java
+        │   │   │   ├── RetryAnalyser.java
+        │   │   │   └── ScreenShotCapturing.java
+        │   │   │
         │   │   ├── dataprovider/
         │   │   │   ├── ArrayDataProvider.java
+        │   │   │   └── ExcelDataProvider.java
         │   │   │   └── ExcelDataProvider.java
         │   │   ├── pages/
         │   │   │   └── A_Home.java
@@ -1510,35 +1539,6 @@
         │   │   │   └── K_Routes.java
         │   │   │   └── L_Commands.java
         │   │   │   └── M_TraceViewer.java
-        │   │   │
-        │   │   ├── utils/
-        │   │   │   ├── adminLoginCommon.java
-        │   │   │   ├── Common.java
-        │   │   │   ├── ConfigReader.java
-        │   │   │   ├── LocatorReader.java
-        │   │   │   ├── ExcelUtils.java
-        │   │   │   ├── popupWindwHandlr.java
-        │   │   │   ├── Retry.java
-        │   │   │   ├── ScrollUtil.java
-        │   │   │   ├── SortingRowOfTable.java
-        │   │   │   ├── SqlConnectUtil.java
-        │   │   │   ├── MDS_ISOMsgs_ToSendToServerSocket.java
-        │   │   │   
-        │   │   │   
-        │   │   ├── base/
-        │   │   │   └── TestBase.java
-        │   │   │   
-        │   │   ├── listeners/
-        │   │   │   ├── DefaultReporting.java
-        │   │   │   ├── RetryAnalyser.java
-        │   │   │   └── ScreenShotCapturing.java
-        │   │   
-        │   ├── resources/
-        │   │   ├── config.properties
-        │       └── locators.properties
-        │
-        ├── test/
-        │   ├── java/
         │   │   └── tests/
         │   │       ├── A_LoginTest.java
         │   │       ├── B_UserRegistrationTest.java
@@ -1552,9 +1552,12 @@
         │   │       ├── K_RoutesTest.java
         │   │       ├── L_CommandsTest.java
         │   │       └── M_ISOmsgs_FunctionTests.java
+        │   │
+        │   │
         │   └── resources/
         │       ├── testdata/
         │       │   └── LoginTestData.xlsx
+        │       │
         │       ├── suites/
         │       │   ├── d_reggression-test.xml
         │       │   ├── e_configure-application-modules-suite.xml
@@ -1563,6 +1566,15 @@
         │       │   ├── c_retry-analyser-login-suite.xml
         │       │   ├── b_default-login-suite.xml
         │       │   ├── a_custom-report-login-suite.xml
+        │       │
+        │       ├── config
+        │       │   ├── config.properties
+        │       │   └── locators.properties
+        │       │
+        │       ├── logs
+        │       ├── reports
+        │       ├── screenshots
+
                      </pre>
                    </div>
                  </div>
